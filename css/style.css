@@ -84,3 +84,22 @@ header {
 .menu__item:hover > .menu__expanded {
     display: block;
 }
+
+.banner__title {
+    position: absolute;
+    font-size: 4em;
+    color: rgb(0, 0, 0);
+    top: 80%;
+    left: 50%;
+}
+
+.banner a{
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+
