@@ -7,6 +7,7 @@
 html, body, button {
     
     font-family: 'Bebas Neue', cursive;
+    background-color: black;
 }
 
 a {
@@ -27,21 +28,28 @@ ul {
 
 
 
+
 header {
     background-color: black;
-    padding: 20px;
+    padding: 10px 5px;
     color: #FFF;
-    height: 65px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav {
     justify-content: space-between;
+    width: 100%;
 }
 
 .logo {
     margin-right: 20px;
     color: #FFF;
     font-size: 20px;
+}
+
+.logo img {
+    height: 50px;
 }
 
 .menu__expanded {
@@ -85,21 +93,77 @@ header {
     display: block;
 }
 
+.banner{
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner__image {
+    width: 100%;
+    object-fit: cover;
+}
+
 .banner__title {
     position: absolute;
     font-size: 4em;
     color: rgb(0, 0, 0);
-    top: 80%;
-    left: 50%;
+    top: 32%;
+    left: 5%;
 }
 
 .banner a{
     background-color: transparent;
     border: none;
-    color: #FFF;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 229, 18);
     position: absolute;
-    top: 70%;
-    left: 50%;
+    padding: 0.1% 1%;
+    top: 65%;
+    left: 40%;
+    font-size: 20px;
+}
+
+.promo{
+background-color: rgb(255, 229, 18);
+font-family: 'Poppins', sans-serif;
+
+}
+
+.promo h1{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.shop{
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop h2{
+    position: absolute;
+    align: center;
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    top: 32%;
+    left: 5%;
+}
+
+
+.shop__list{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 5% 10% ;
+    
+}
+
+.shop__item{
+    margin: 2%;
 }
 
 
