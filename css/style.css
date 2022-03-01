@@ -6,7 +6,7 @@
 
 html, body, button {
     
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Oswald', sans-serif;
     background-color: black;
 }
 
@@ -52,6 +52,10 @@ header {
     height: 50px;
 }
 
+
+
+
+
 .menu__expanded {
     display: none;
 }
@@ -79,6 +83,7 @@ header {
 
 .menu__expanded {
     position: absolute;
+    z-index: 1;
     background-color: rgb(230, 230, 230);
     padding: 10px 20px;
     left: -12px;
@@ -93,6 +98,10 @@ header {
     display: block;
 }
 
+
+
+
+
 .banner{
     align-items: center;
     position: relative;
@@ -103,14 +112,17 @@ header {
 .banner__image {
     width: 100%;
     object-fit: cover;
+    background: linear-gradient(270deg, rgba(27, 38, 27, 0.7) 0%, rgba(27, 31, 38, 0) 98.18%);
 }
 
 .banner__title {
     position: absolute;
+    background-color: rgb(255, 229, 18);
     font-size: 4em;
     color: rgb(0, 0, 0);
     top: 32%;
-    left: 5%;
+    left: 0.1%;
+    padding: 0% 2% 0% 10%;
 }
 
 .banner a{
@@ -120,10 +132,14 @@ header {
     background-color: rgb(255, 229, 18);
     position: absolute;
     padding: 0.1% 1%;
-    top: 65%;
-    left: 40%;
+    top: 55%;
+    left: 47%;
     font-size: 20px;
 }
+
+
+
+
 
 .promo{
 background-color: rgb(255, 229, 18);
@@ -137,6 +153,8 @@ font-family: 'Poppins', sans-serif;
 }
 
 
+
+
 .shop{
     align-items: center;
     position: relative;
@@ -145,25 +163,70 @@ font-family: 'Poppins', sans-serif;
 }
 
 .shop h2{
-    position: absolute;
-    align: center;
-    font-size: 4em;
+    text-align: center;
+    flex: auto;
+    font-size: 30px;
     color: rgb(255, 255, 255);
-    top: 32%;
-    left: 5%;
+    padding: 2%;
+  
 }
 
 
 .shop__list{
+    
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 5% 10% ;
+    align-items: center;    
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap;
     
 }
 
 .shop__item{
-    margin: 2%;
+    margin: 10px;
+    color: #FFF;
+
 }
+
+.shop__img{
+    width: 190px;
+}
+.shop__product{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.shop__price{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.happyThings{
+
+    background-color: rgb(27,31,38);
+    color: white;
+    display: flex;
+
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thing{
+    padding: 5%;
+}
+
+.thing h1{
+   font-size: 25px;
+}
+
+
+.thing img{
+    width: 300px;
+    height:300px;
+    margin: 5%;
+}
+
 
 
