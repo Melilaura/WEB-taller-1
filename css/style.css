@@ -309,6 +309,58 @@ font-family: 'Poppins', sans-serif;
     width: 100px;
 }
 
-.form__button:hover{cursor: pointer}
+
+
+
+
+
+
+
+
+.footer__info{
+      
+    display: flex;   
+    flex-direction: row; 
+    flex-wrap: wrap;
+    color: #FFF;
+    background-color: rgb(0, 0, 0);
+    padding: 100px;
+    align-items: left;
+}
+
+.footer__info h1{
+
+    font-size: 15px;
+}
+
+.footer__menu{
+    display: flex;   
+    flex-direction: column; 
+    flex-wrap: wrap;
+    color: #FFF;
+}
+
+
+.footer__knowus{
+    display: flex;   
+    flex-direction: column; 
+    flex-wrap: wrap;
+    color: #FFF;
+}
+
+.footer__information{
+    display: flex;   
+    flex-direction: column; 
+    flex-wrap: wrap;
+    color: #FFF;
+}
+
+.footer__corporation{
+    display: flex;   
+    flex-direction: column; 
+    flex-wrap: wrap;
+    color: #FFF;
+}
+
 
 
