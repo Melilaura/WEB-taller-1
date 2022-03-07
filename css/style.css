@@ -157,43 +157,44 @@ font-family: 'Poppins', sans-serif;
 .shop__title{
     text-align: center;
     flex: auto;
-    font-size: 18px;
+    font-size: 1em;
     color: rgb(255, 255, 255);
-    padding: 6% 0% 1% 0%;
+    padding: 60px 10px 10px;
   
 }
 
 
 .shop__list{
     
-    display: flex;
-    align-items: center;    
+    display: flex;   
     flex-direction: row; 
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0% 5% 5%;    
+      
 
 }
 
 .shop__item{
-    margin: 1% 2% 0% 0%;
-    color: #FFF;
+
+       color: #FFF;
+       align-items: center;
+     
+       
+       padding: 10px 25px 80px 0px;
 
 }
 
 .shop__img{
-    width: 155px;
-    height: 155px;
+    height: 170px;
+    
 }
 
 .shop__product{
-    
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .shop__price{
     font-family: 'Poppins', sans-serif;
-
 }
 
 
@@ -208,23 +209,24 @@ font-family: 'Poppins', sans-serif;
     flex-direction: row; 
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
 }
 
 .thing{
-    margin: 44px 55px;
+    margin: 10px;
     color: #FFF;
 }
 
 .thing h1{
-   font-size: 25px;
+   font-size: 1.5em;
    text-transform: uppercase;
    text-align: left;
 } 
 
 
 .thing img{
-    width: 310px;
-    height:310px;
+    width: 90%;
 }
 
 
@@ -233,7 +235,7 @@ font-family: 'Poppins', sans-serif;
     justify-content: end;
     flex-wrap: wrap;
     background-color: black;
-    padding: 5%;
+    padding: 50px;
      
 }
 
@@ -244,28 +246,17 @@ font-family: 'Poppins', sans-serif;
 
 .carrousel a{
     color: white;
-    font-size: 20px;
-    padding-right: 1% 10%;
+    font-size: 1.5em;
 }
 
-.carrousel a{
-    color: white;
-    font-size: 25px;
-    
-}
 
-.carrousel__a{
-    padding: 1% 0.2%;
-}
+
+
 
 .form_newsletter{
     display:flex;
     flex-direction: row; 
 }
-
-
-
-
 .newLetter{
     background-color: rgb(27,31,38);
     padding: 60px 90px;
@@ -279,6 +270,7 @@ font-family: 'Poppins', sans-serif;
     flex-direction: row; 
     justify-content: center;
     flex-wrap: wrap;      
+    align-items: center;
 }
 
 .newsLetter__info h1{
