@@ -1,0 +1,36 @@
+@media all and (max-width: 1074px) {
+
+
+    .logo img {
+        padding: 5px;
+        
+    }
+    .menu__item {
+        margin: 2px;
+    }
+    .menu__item button, .menu__item a {
+        font-size: 0.2em;
+    }
+     
+    .menu__item a {
+        color: rgb(32, 32, 32);
+        text-align: left;
+        padding: 5px;
+    }
+
+    .banner__item img{
+        height: 15px;
+    }
+
+    .banner__item button{
+        padding: 1px;
+        font-size: 0.1em;
+    }
+
+    .user div .menu__item{
+        padding: 5px;
+    } 
+    
+    
+    
+    }
