@@ -67,12 +67,9 @@ header {
 }
 
 .menu__item a {
-    color: #FFF;
-}
-
-.menu__item:hover {
-    background-color: rgb(71, 71, 71);
-    border-radius: 20px;
+    color: rgb(32, 32, 32);
+    text-align: left;
+    padding: 50px;
 }
 
 .menu__item button {
@@ -84,10 +81,11 @@ header {
 .menu__expanded {
     position: absolute;
     z-index: 1;
-    background-color: rgb(230, 230, 230);
-    padding: 10px 20px;
-    left: -12px;
-    top: 45px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    text-align: left;
+    padding: 20px;
+    width: 350px;
 }
 
 .menu__item button, .menu__item a {
@@ -96,6 +94,10 @@ header {
 
 .menu__item:hover > .menu__expanded {
     display: block;
+}
+
+.banner__item img{
+    padding: 0px 20px 0px 20px;
 }
 
 
