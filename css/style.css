@@ -217,6 +217,12 @@ font-family: 'Poppins', sans-serif;
     
 }
 
+.shop__img:hover{
+
+    transform: scale(1.2);
+
+}
+
 .shop__product{
     font-size: 1em;
 }
@@ -298,10 +304,6 @@ font-family: 'Poppins', sans-serif;
 .carrousel__imagenes:hover{
 
         transform: translateX(-40%);
-    
-
-       
-    
 
 }
 
@@ -311,6 +313,7 @@ font-family: 'Poppins', sans-serif;
 .hide{
     display: block;
 }
+
 
 
 
