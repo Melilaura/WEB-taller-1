@@ -127,3 +127,161 @@
 }
 
 
+@media all and (max-width: 844px) {
+
+
+    .logo {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        padding: 1%;
+        width: 50px;
+        height: 30px;
+        
+    }
+
+    .menu__item {
+        display: none;
+    }
+
+    .user__button{
+        display: none;
+    }
+     
+ 
+
+    .banner__title{
+        font-size: 1.5em;
+        top: 50px;
+        padding:0px 10px 0px 30px;
+    }
+
+    .banner a{
+        padding: 1px;
+        top: 90px;
+        left: 250px;
+        font-size: 0.1em;
+    }
+
+    
+        
+        .promo h1{
+            text-align: center;
+            font-size:0.1em ;
+        }
+
+
+
+.shop__img{
+
+height: 100px;
+
+}
+
+    .shop__item{
+
+        align-items: center;
+     
+        padding: 25px ; 
+ }
+
+ .shop__list{
+    padding: 10PX;
+ }
+
+ .shop__product{
+     font-size: 0.1em;
+ }
+
+
+.thing{
+    align-items: center;
+}
+
+
+ .thing img{
+     width: 60%;
+ }
+
+ .thing h1 {
+    font-size: 1em;}
+
+
+
+
+
+
+
+ .carrousel a {
+    color: white;
+    font-size: 0.1em;
+}
+.carrousel__imagenes img {
+    width: 120%;
+   
+}
+
+.form_newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.newsLetter__info h1 {
+    font-size: 0.9em;
+}
+
+.placeholder {
+    width: 200px;
+    }
+
+    .form__button{
+        margin: 10px 0px;
+    }
+
+    .footer__info{
+      
+        
+        padding:50px 100px 50px;
+    }
+    
+    .footer__info h1{
+
+        font-size: 5px;
+    }
+    
+    .footer__info a {
+        color: rgb(79,77,74);
+        padding: 5px 0px;
+    }
+    
+    .footer__menu{
+              
+        font-size: 5px;
+    }
+    
+    
+    
+    .footer__knowus{
+        font-size: 2px;
+
+    }
+    
+    .footer__information{
+        font-size: 2px;    
+    }
+    
+    .footer__corporation{
+    
+        font-size: 2px;
+
+    }
+    
+    
+}
+
+
