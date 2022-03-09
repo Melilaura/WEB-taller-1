@@ -30,7 +30,92 @@
     .user div .menu__item{
         padding: 5px;
     } 
-    
-    
-    
+
+
+
+    .banner__title{
+        font-size: 2.5em;
+        top: 150px;
+        left: 0px;
+        padding:0px 10px 0px 50px;
     }
+
+    .banner a{
+        padding: 5px;
+        top: 220px;
+        left: 400px;
+        font-size: 0.5em;
+    }
+
+
+    .shop__item{
+
+        padding: 10px 25px 0px 0px; 
+ }
+
+ .shop__list{
+    padding: 0px 0px 100px 0px;
+ }
+
+ .carrousel a {
+    color: white;
+    font-size: 1em;
+}
+.carrousel__imagenes img {
+    width: 200%;
+   
+}
+
+.form_newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder {
+    width: 200px;
+    }
+
+    footer__info{
+      
+        
+        padding: 50px 100px;
+    }
+    
+    .footer__info h1{
+
+        font-size: 5px;
+    }
+    
+    .footer__info a {
+        color: rgb(79,77,74);
+        padding: 5px 0px;
+    }
+    
+    .footer__menu{
+              
+        font-size: 10px;
+    }
+    
+    
+    
+    .footer__knowus{
+        font-size: 5px;
+
+    }
+    
+    .footer__information{
+        font-size: 5px;    
+    }
+    
+    .footer__corporation{
+    
+        font-size: 5px;
+
+    }
+    
+    
+}
+
+
