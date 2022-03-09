@@ -27,6 +27,11 @@
         font-size: 0.1em;
     }
 
+    .banner__item--location{
+        display: none;
+    }
+
+
     .user div .menu__item{
         padding: 5px;
     } 
@@ -57,12 +62,18 @@
     padding: 0px 0px 100px 0px;
  }
 
+
+
+
+
+
+
  .carrousel a {
     color: white;
     font-size: 1em;
 }
 .carrousel__imagenes img {
-    width: 200%;
+    width: 100%;
    
 }
 

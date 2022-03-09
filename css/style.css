@@ -94,6 +94,7 @@ header {
 
 .menu__item button, .menu__item a {
     font-size: .65em;
+    cursor: pointer;
 }
 
 .menu__item:hover > .menu__expanded {
@@ -118,6 +119,8 @@ header {
 .banner__item button, .banner__item a {
     font-size: .65em;
     padding: 10px;
+    cursor: pointer;
+    
 }
 
 
@@ -143,8 +146,8 @@ header {
     background-color: rgb(255, 229, 18);
     font-size: 4em;
     color: rgb(0, 0, 0);
-    justify-content: center;
-    align-items: center;
+    padding: 0px 0px 0px 110px;
+    left: 0;
 }
 
 .banner a{
@@ -157,6 +160,7 @@ header {
     top: 300px;
     font-size: 1em;
     align-items: center;
+    cursor: pointer;
 }
 
 
@@ -209,6 +213,7 @@ font-family: 'Poppins', sans-serif;
 
 .shop__img{
     height: 170px;
+    cursor: pointer;
     
 }
 
@@ -238,6 +243,7 @@ font-family: 'Poppins', sans-serif;
 
 .thing{
     margin: 10px;
+
     color: #FFF;
 }
 
@@ -250,6 +256,8 @@ font-family: 'Poppins', sans-serif;
 
 .thing img{
     width: 90%;
+
+    cursor: pointer;
 }
 
 
@@ -265,12 +273,46 @@ font-family: 'Poppins', sans-serif;
 .carrousel__imagenes img{
     width: 100%;
     object-fit: cover;
+    transition: transform .2s;
+
+   
+
 }
 
 .carrousel a{
     color: white;
     font-size: 1.5em;
+    cursor: pointer;
 }
+
+.hide{
+    display: none;
+}
+
+
+.menu__item:hover > .menu__expanded {
+    display: block;
+}
+
+
+.carrousel__imagenes:hover{
+
+        transform: translateX(-40%);
+    
+
+       
+    
+
+}
+
+.carrousel__imagenes{
+    transition: transform 2s;
+}
+.hide{
+    display: block;
+}
+
+
 
 
 
@@ -321,6 +363,7 @@ font-family: 'Poppins', sans-serif;
     text-align: center;
     height: 40px;
     width: 100px;
+    cursor: pointer;
 }
 
 
