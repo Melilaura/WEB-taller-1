@@ -197,16 +197,20 @@ height: 100px;
 
 
 .thing{
-    align-items: center;
+
+    align-items:flex-end;
+    justify-items: center;
+    padding: 0%;
+    margin: 10px;
 }
 
 
- .thing img{
-     width: 60%;
- }
-
+ 
  .thing h1 {
-    font-size: 1em;}
+    font-size: 1em;
+    text-align: center;
+
+}
 
 
 
