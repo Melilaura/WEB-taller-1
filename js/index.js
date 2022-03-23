@@ -65,9 +65,6 @@ const products = [{
 
 //punto 3
 
-//HTML element for rendering
-
-
 console.log("Los productos con precio igual o mayor a 500.000 son: ");
 for (let index = 0; index < products.length; index++) {
     if (products[index].price >= 700000) {
@@ -82,9 +79,13 @@ for (let index = 0; index < products.length; index++) {
     }
 }
 
+
+
 ///punto 4
 
-function product() {
+const shopSection = document.getElementById("shop");
+
+function productShop() {
 
     shopSection.innerHTML = "";
 
@@ -93,28 +94,24 @@ function product() {
     }
 }
 
-const shopSection = document.getElementById("shop");
 
 //Create items
-function render(product) {
-    //Container
+function render(products) {
+
     let item = document.createElement("div");
     item.className = "shop__item";
 
-    //Product image
     let image = document.createElement("img");
     image.className = "shop__img";
-    image.src = product.image;
+    image.src = products.image;
 
-    //Product name
     let name = document.createElement("h3");
     name.className = "shop__product";
-    name.innerHTML = product.name;
+    name.innerHTML = products.name;
 
-    //Product price
     let price = document.createElement("h4");
     price.className = "shop__price"
-    price.innerHTML = "$" + product.price;
+    price.innerHTML = products.price;
 
     item.appendChild(image);
     item.appendChild(name);
@@ -123,4 +120,5 @@ function render(product) {
     return item;
 }
 
-product();
+
+productShop();
