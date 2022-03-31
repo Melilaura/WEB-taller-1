@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+$general__font: 'Oswald';
+$second__font:'Poppins';
+$general__background: black;
+$second__background: rgb(27, 31, 38);
+$general__buttonColor: rgb(255, 229, 18);
+$general__text: black;
+$general__secondText: white;
+@mixin page {
+    font-family: $general__font;
+    background-color: $general__background;
+}
+
+@mixin line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: column;
+}
+
+html {
+    @include page();
+}
+
+.form__title {
+    color: $general__secondText;
+    font-size: 20px;
+}
+
+.addProduct {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px 10px;
+    font-family: $second__font;
+    text-align: left;
+    width: 300px;
+    height: 40px;
+    font-size: 0.8em;
+    margin: 10px;
+}
+
+.addBtn {
+    font-family: $general__font;
+    font-size: 0.8em;
+    background-color: $general__buttonColor;
+    border: none;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}

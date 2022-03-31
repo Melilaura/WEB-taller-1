@@ -1,18 +1,17 @@
-//punto 1
+//point 1
 
 const user = [{
-        name: "",
-        gender: "",
-        age: "",
-        email: "",
-        country: "",
-        phone_number: "",
+        name: "Antonieta Josefina",
+        gender: "no Binary",
+        age: "42 years old",
+        email: "yourAntoJosef@gmail.com",
+        country: "Kansas",
+        phone_number: "666-77-89",
     }
 
 ]
 
-// punto 2
-//arreglitos yei :D
+// point 2
 const products = [{
         name: "SANDALIAS CLARISSA II CUERO NAPPA CON PLATAFORMA",
         price: "620000",
@@ -63,7 +62,7 @@ const products = [{
     },
 ]
 
-//punto 3
+//point 3
 
 console.log("Los productos con precio igual o mayor a 500.000 son: ");
 for (let index = 0; index < products.length; index++) {
@@ -81,7 +80,7 @@ for (let index = 0; index < products.length; index++) {
 
 
 
-///punto 4
+//point 4
 
 const shopSection = document.getElementById("shop");
 
@@ -98,20 +97,23 @@ function productShop() {
 //Create items
 function render(products) {
 
+    //create div
     let item = document.createElement("div");
     item.className = "shop__item";
 
+    //create the image
     let image = document.createElement("img");
     image.className = "shop__img";
     image.src = products.image;
 
+    //create the product name
     let name = document.createElement("h3");
     name.className = "shop__product";
     name.innerHTML = products.name;
 
     let price = document.createElement("h4");
     price.className = "shop__price"
-    price.innerHTML = products.price;
+    price.innerHTML = "$ " + products.price;
 
     item.appendChild(image);
     item.appendChild(name);

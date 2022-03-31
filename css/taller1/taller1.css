@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html {
+  font-family: "Oswald";
+  background-color: black;
+}
+
+.form__title {
+  color: white;
+  font-size: 20px;
+}
+
+.addProduct {
+  background-color: white;
+  border: none;
+  padding: 8px 10px;
+  font-family: "Poppins";
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.addBtn {
+  font-family: "Oswald";
+  font-size: 0.8em;
+  background-color: #ffe512;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=taller1.css.map */

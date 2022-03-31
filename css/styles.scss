@@ -188,27 +188,25 @@ header {
         color: $general__secondText;
         padding: 60px 10px 10px;
     }
-    .shop__list {
-        @include line();
-        .shop__item {
-            color: #FFF;
-            align-items: center;
-            padding: 10px 25px 80px 0px;
-            .shop__img {
-                height: 170px;
-                cursor: pointer;
+    @include line();
+    .shop__item {
+        color: #FFF;
+        align-items: center;
+        padding: 10px 25px 80px 0px;
+        .shop__img {
+            height: 170px;
+            cursor: pointer;
+        }
+        &:hover {
+            >.shop__img {
+                transform: scale(1.2);
             }
-            &:hover {
-                >.shop__img {
-                    transform: scale(1.2);
-                }
-            }
-            .shop__product {
-                font-size: 1em;
-            }
-            .shop__price {
-                font-family: $second__font;
-            }
+        }
+        .shop__product {
+            font-size: 1em;
+        }
+        .shop__price {
+            font-family: $second__font;
         }
     }
 }
