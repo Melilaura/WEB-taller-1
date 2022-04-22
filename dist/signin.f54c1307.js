@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"bWTJ0":[function(require,module,exports) {
+})({"bcdUf":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -545,12 +545,12 @@ signInForm.addEventListener("submit", (e)=>{
 async function createUser(name, lastName, email, password) {
     try {
         const { user  } = await _auth.createUserWithEmailAndPassword(auth, email, password);
-        alert(`Bienvenido, usuario $(user.email)`);
+        alert(`Bienvenido, usuario ${user.email}`);
         console.log(newUser);
     } catch (e) {
-        if (e.code == auth / "weak-password") alert("Tu contraseña debe tener al menos 6 caracteres");
-        if (e.code == auth / "email-already-in-use") alert("Este correo ya se encuentra en uso");
         console.log(e.code);
+        if (e.code === "auth/weak-password") alert("Tu contraseña debe tener al menos 6 caracteres");
+        if (e.code === "auth/email-already-in-use") alert("Este correo ya se encuentra en uso");
     }
 }
 
@@ -12810,6 +12810,6 @@ var version = "0.19.12";
 }
 registerAuth("Browser" /* BROWSER */ );
 
-},{"@firebase/util":"ePiK6","@firebase/app":"3AcPV","tslib":"lRdW5","@firebase/logger":"fZmft","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bWTJ0","jl0Ko"], "jl0Ko", "parcelRequire2456")
+},{"@firebase/util":"ePiK6","@firebase/app":"3AcPV","tslib":"lRdW5","@firebase/logger":"fZmft","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bcdUf","jl0Ko"], "jl0Ko", "parcelRequire2456")
 
 //# sourceMappingURL=signin.f54c1307.js.map

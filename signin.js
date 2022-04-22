@@ -34,18 +34,20 @@ signInForm.addEventListener("submit", e => {
 async function createUser(name, lastName, email, password) {
     try {
         const { user } = await createUserWithEmailAndPassword(auth, email, password)
-        alert(`Bienvenido, usuario $(user.email)`);
+        alert(`Bienvenido, usuario ${user.email}`);
         console.log(newUser);
     } catch (e) {
 
-        if (e.code == auth / "weak-password") {
+        console.log(e.code);
+
+        if (e.code === "auth/weak-password") {
             alert("Tu contraseña debe tener al menos 6 caracteres")
         }
 
-        if (e.code == auth / "email-already-in-use") {
+        if (e.code === "auth/email-already-in-use") {
             alert("Este correo ya se encuentra en uso")
         }
-        console.log(e.code);
+        
     }
 
 }
