@@ -539,8 +539,13 @@ loginForm.addEventListener("submit", (e)=>{
 });
 async function login(email, password) {
     try {
-        await signInWithEmailAndPassword(auth, email, password);
+        const { user  } = await signInWithEmailAndPassword(auth, email, password);
+        alert(`Bienvenido, usuario $(user.email)`);
+        console.log(user);
     } catch (e) {
+        if (e.code == auth / "wrong-passsword") alert("Tu contraseña es incorrecta");
+        if (e.code == auth / "user-not-found") alert("Usuario no encontrado");
+        console.log(e.code);
         console.log(e.code);
     }
 }
