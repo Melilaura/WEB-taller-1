@@ -15,4 +15,27 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-console.log(app);
+
+
+const loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit", e => {
+
+    e.preventDefault();
+    const email = loginForm.email.value;
+    const password = loginForm.password.value;
+    login(email, password);
+    console.log("logIn");
+
+});
+
+async function login(email, password) {
+    try {
+        await signInWithEmailAndPassword(auth, email, password);
+
+    } catch (e) {
+
+        console.log(e.code);
+    }
+
+}

@@ -529,7 +529,21 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 const app = _app.initializeApp(firebaseConfig);
-console.log(app);
+const loginForm = document.getElementById("loginForm");
+loginForm.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const email = loginForm.email.value;
+    const password = loginForm.password.value;
+    login(email, password);
+    console.log("logIn");
+});
+async function login(email, password) {
+    try {
+        await signInWithEmailAndPassword(auth, email, password);
+    } catch (e) {
+        console.log(e.code);
+    }
+}
 
 },{"firebase/app":"5wGMN"}],"5wGMN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

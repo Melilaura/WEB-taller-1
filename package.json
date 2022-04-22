@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "parcel ./html/login.html",
+        "dev": "parcel ./html/signin.html",
+        "dev2": "parcel ./html/login.html",
         "test": "echo \"Error: no test specified\" && exit 1"
 
     },
