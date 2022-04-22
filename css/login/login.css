@@ -136,199 +136,7 @@ header .nav .banner__item a {
   cursor: pointer;
 }
 
-.banner {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.banner .banner__image {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.banner .banner__text .banner__title {
-  position: absolute;
-  background-color: #ffe512;
-  font-size: 4em;
-  color: "Oswald";
-  padding: 0px 0px 0px 110px;
-  left: 0;
-}
-
-.banner .banner__text a {
-  background-color: transparent;
-  border: none;
-  color: black;
-  background-color: #ffe512;
-  position: absolute;
-  padding: 5px;
-  top: 350px;
-  left: 720px;
-  font-size: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.banner .promo {
-  background-color: #ffe512;
-  font-family: "Poppins";
-  text-align: center;
-  font-size: 0.5em;
-}
-
-.banner .shop__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.banner .shop .shop__title {
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  font-size: 1em;
-  color: white;
-  padding: 60px 10px 10px;
-}
-
-.banner .shop .shop__item {
-  color: #FFF;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 25px 80px 0px;
-}
-
-.banner .shop .shop__item .shop__img {
-  height: 170px;
-  cursor: pointer;
-}
-
-.banner .shop .shop__item:hover > .shop__img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.banner .shop .shop__item .shop__product {
-  font-size: 1em;
-}
-
-.banner .shop .shop__item .shop__price {
-  font-family: "Poppins";
-}
-
-.banner .happyThings {
-  background-color: #1b1f26;
-  color: white;
-  padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.banner .happyThings .thing {
-  margin: 10px;
-  color: white;
-}
-
-.banner .happyThings h1 {
-  font-size: 1.5em;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.banner .happyThings img {
-  width: 90%;
-  cursor: pointer;
-}
-
-.banner .carrousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 50px;
-}
-
-.banner .carrousel img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-.banner .carrousel a {
-  color: white;
-  font-size: 1.5em;
-  cursor: pointer;
-}
-
-.banner .carrousel .carrousel__imagenes {
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
-}
-
-.banner .carrousel .carrousel__imagenes:hover {
-  -webkit-transform: translateX(-40%);
-          transform: translateX(-40%);
-}
-
-.banner .form_newsletter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.banner .newLetter {
-  background-color: #1b1f26;
+.userIn {
   padding: 60px 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,30 +146,25 @@ header .nav .banner__item a {
           justify-content: center;
 }
 
-.banner .newsLetter__info h1 {
-  color: white;
-  font-size: 20px;
-}
-
-.banner .newsLetter__info .form_newsletter {
+.form__login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
-.banner .newsLetter__info .form_newsletter .placeholder {
+.form__login .placeholder {
   background-color: white;
   border: none;
   padding: 8px 10px;
@@ -373,7 +176,7 @@ header .nav .banner__item a {
   margin: 10px;
 }
 
-.banner .newsLetter__info .form_newsletter .form__button {
+.form__login .form__button {
   font-family: "Oswald";
   font-size: 0.8em;
   background-color: #ffe512;
@@ -384,7 +187,132 @@ header .nav .banner__item a {
   cursor: pointer;
 }
 
-.banner .footer__info {
+.form__login h1 {
+  color: white;
+  font-size: 2em;
+}
+
+.form__login h3 {
+  color: white;
+  font-size: 1em;
+  font-family: "Poppins";
+  text-align: left;
+}
+
+.form__login p {
+  color: white;
+  font-size: 1em;
+}
+
+.form__signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin: 0px 70px;
+}
+
+.form__signin .placeholder {
+  background-color: white;
+  border: none;
+  padding: 8px 10px;
+  font-family: "Poppins";
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.form__signin .form__button {
+  font-family: "Oswald";
+  font-size: 0.8em;
+  background-color: #ffe512;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.form__signin h1 {
+  color: white;
+  font-size: 2em;
+  padding: 60px;
+}
+
+.form__signin h3 {
+  color: white;
+  font-size: 1em;
+}
+
+.form__signin p {
+  color: white;
+  font-size: 1em;
+  padding: 60px;
+}
+
+.form_newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.newLetter {
+  background-color: #1b1f26;
+  padding: 60px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.newsLetter__info h1 {
+  color: white;
+  font-size: 20px;
+}
+
+.newsLetter__info .form_newsletter .placeholder {
+  background-color: white;
+  border: none;
+  padding: 8px 10px;
+  font-family: "Poppins";
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.newsLetter__info .form_newsletter .form__button {
+  font-family: "Oswald";
+  font-size: 0.8em;
+  background-color: #ffe512;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.footer__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,18 +336,18 @@ header .nav .banner__item a {
   padding: 100px 100px 50px;
 }
 
-.banner .footer__info h1 {
+.footer__info h1 {
   color: white;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
-.banner .footer__info a {
+.footer__info a {
   color: #4f4d4a;
   padding: 5px 0px;
 }
 
-.banner .footer__info .footer__menu {
+.footer__info .footer__menu {
   color: white;
   width: 150px;
   margin: 20px;
@@ -427,7 +355,7 @@ header .nav .banner__item a {
   font-size: 15px;
 }
 
-.banner .footer__info .footer__knowus {
+.footer__info .footer__knowus {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -447,7 +375,7 @@ header .nav .banner__item a {
   margin: 20px;
 }
 
-.banner .footer__info .footer__information {
+.footer__info .footer__information {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -467,7 +395,7 @@ header .nav .banner__item a {
   margin: 20px;
 }
 
-.banner .footer__info .footer__corporation {
+.footer__info .footer__corporation {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -486,4 +414,4 @@ header .nav .banner__item a {
   width: 150px;
   margin: 20px;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=login.css.map */
