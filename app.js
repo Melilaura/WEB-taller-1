@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -15,6 +16,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth();
 
 
 const loginForm = document.getElementById("loginForm");
@@ -32,18 +34,24 @@ loginForm.addEventListener("submit", e => {
 async function login(email, password) {
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password);
-        alert(`Bienvenido, usuario $(user.email)`);
+        alert(`Bienvenido, usuario ${user.email}`);
         console.log(user);
     } catch (e) {
-        if (e.code == auth / "wrong-passsword") {
-            alert("Tu contraseña es incorrecta")
+
+        console.log(e.code);
+        
+        if (e.code === "auth/wrong-password") {
+            alert("Tu contraseña es incorrecta");
         }
 
-        if (e.code == auth / "user-not-found") {
-            alert("Usuario no encontrado")
+        if (e.code === "auth/user-not-found") {
+            alert("Usuario no encontrado");
         }
-        console.log(e.code);
-        console.log(e.code);
+
+        if (e.code === "auth/invalid-email") {
+            alert("Email invalido");
+        }
+        
     }
 
 }
