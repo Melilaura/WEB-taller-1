@@ -35,7 +35,7 @@ async function createUser(name, lastName, email, password) {
     try {
         const { user } = await createUserWithEmailAndPassword(auth, email, password)
         alert(`Bienvenido, usuario $(user.email)`);
-        console.log(newUser);
+        console.log(user);
     } catch (e) {
 
         if (e.code == auth / "weak-password") {
