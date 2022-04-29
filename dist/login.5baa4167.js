@@ -520,6 +520,7 @@ var _auth = require("firebase/auth");
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
+var _auth1 = require("./src/scripts/auth");
 const firebaseConfig = {
     apiKey: "AIzaSyCCX6JaKUvwmi4H7glu94cdzrVCjh19X58",
     authDomain: "drmartens-store.firebaseapp.com",
@@ -536,23 +537,11 @@ loginForm.addEventListener("submit", (e)=>{
     e.preventDefault();
     const email = loginForm.email.value;
     const password = loginForm.password.value;
-    login(email, password);
+    _auth1.login(auth, email, password);
     console.log("logIn");
 });
-async function login(email, password) {
-    try {
-        const { user  } = await _auth.signInWithEmailAndPassword(auth, email, password);
-        alert(`Bienvenido, usuario ${user.email}`);
-        console.log(user);
-    } catch (e) {
-        console.log(e.code);
-        if (e.code === "auth/wrong-password") alert("Tu contraseña es incorrecta");
-        if (e.code === "auth/user-not-found") alert("Usuario no encontrado");
-        if (e.code === "auth/invalid-email") alert("Email invalido");
-    }
-}
 
-},{"firebase/app":"5wGMN","firebase/auth":"drt1f"}],"5wGMN":[function(require,module,exports) {
+},{"firebase/app":"5wGMN","firebase/auth":"drt1f","./src/scripts/auth":"9GWoQ"}],"5wGMN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _app = require("@firebase/app");
@@ -12808,6 +12797,38 @@ var version = "0.19.12";
 }
 registerAuth("Browser" /* BROWSER */ );
 
-},{"@firebase/util":"ePiK6","@firebase/app":"3AcPV","tslib":"lRdW5","@firebase/logger":"fZmft","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["d5kvp","igcvL"], "igcvL", "parcelRequire2456")
+},{"@firebase/util":"ePiK6","@firebase/app":"3AcPV","tslib":"lRdW5","@firebase/logger":"fZmft","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9GWoQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createUser", ()=>createUser
+);
+parcelHelpers.export(exports, "login", ()=>login
+);
+var _auth = require("firebase/auth");
+async function login(auth, email, password) {
+    try {
+        const { user  } = await _auth.signInWithEmailAndPassword(auth, email, password);
+        alert(`Bienvenido, usuario ${user.email}`);
+        console.log(user);
+    } catch (e) {
+        console.log(e.code);
+        if (e.code === "auth/wrong-password") alert("Tu contraseña es incorrecta");
+        if (e.code === "auth/user-not-found") alert("Usuario no encontrado");
+        if (e.code === "auth/invalid-email") alert("Email invalido");
+    }
+}
+async function createUser(auth, { email , password  }) {
+    try {
+        const { user  } = await _auth.createUserWithEmailAndPassword(auth, email, password);
+        alert(`Bienvenido, usuario ${user.email}`);
+        console.log(newUser);
+    } catch (e) {
+        //console.log(e.code);
+        if (e.code === "auth/weak-password") alert("Tu contraseña debe tener al menos 6 caracteres");
+        if (e.code === "auth/email-already-in-use") alert("Este correo ya se encuentra en uso");
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","firebase/auth":"drt1f"}]},["d5kvp","igcvL"], "igcvL", "parcelRequire2456")
 
 //# sourceMappingURL=login.5baa4167.js.map

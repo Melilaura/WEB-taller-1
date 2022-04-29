@@ -1,9 +1,10 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
+import { login, createUser, addUSerToDatabase } from "./src/scripts/auth"
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCCX6JaKUvwmi4H7glu94cdzrVCjh19X58",
@@ -17,42 +18,33 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
-console.log(app);
+const db = getFirestore(app);
+//console.log(app);
 
 const signInForm = document.getElementById("signInForm");
-signInForm.addEventListener("submit", e => {
+
+signInForm.addEventListener("submit", async(e) => {
 
     e.preventDefault();
+
     console.log("User created");
+
     const name = signInForm.name.value;
     const lastName = signInForm.lastName.value;
     const email = signInForm.email.value;
     const password = signInForm.password.value;
-    createUser(name, lastName, email, password);
-});
 
-async function createUser(name, lastName, email, password) {
-    try {
-        const { user } = await createUserWithEmailAndPassword(auth, email, password)
-
-        alert(`Bienvenido, usuario $(user.email)`);
-        console.log(user);
-
-        alert(`Bienvenido, usuario ${user.email}`);
-        console.log(newUser);
-
-    } catch (e) {
-
-        console.log(e.code);
-
-        if (e.code === "auth/weak-password") {
-            alert("Tu contraseña debe tener al menos 6 caracteres")
-        }
-
-        if (e.code === "auth/email-already-in-use") {
-            alert("Este correo ya se encuentra en uso")
-        }
-
+    const newUser = {
+        name,
+        lastName,
+        email,
+        password,
+        isAdmin: false
     }
 
-}
+    const userCreated = await createUser(auth, newUser);
+    await addUSerToDatabase(db, userCreated.uid, newUser);
+    //console.log(userCreated);
+    //createUser(auth, newUser);
+    alert(`Bienvenido, ${name +" "+ lastName}`);
+});
