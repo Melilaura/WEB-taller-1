@@ -6,6 +6,8 @@
     "scripts": {
         "dev": "parcel ./html/signin.html ",
         "dev2": "parcel ./html/login.html",
+        "dev3": "parcel ./html/admin.html",
+
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
