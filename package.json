@@ -7,6 +7,7 @@
         "dev": "parcel ./html/signin.html ",
         "dev2": "parcel ./html/login.html",
         "dev3": "parcel ./html/admin.html",
+        "dev4": "parcel ./html/shopCart.html",
 
         "test": "echo \"Error: no test specified\" && exit 1"
     },
